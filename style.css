@@ -124,6 +124,7 @@ body {
     border-left: none;
     padding: 0 10px;
     font-size: 100%;
+    height: auto;
     width: auto;
     font-family: Calibri, sans-serif;
     height: 34px;
@@ -237,4 +238,99 @@ body {
 
 #CopyrightInfo img {
     margin-bottom: 20px;
+}
+
+/* Add media query for small screens */
+@media (max-width: 768px) {
+    body {
+        margin: 0; /* Remove default margin */
+        padding: 0; /* Remove default padding */
+        box-sizing: border-box; /* Ensure consistent box model */
+        width: 100%; /* Ensure body takes full width */
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+
+    #div1 {
+        height: auto;
+        padding: 5px 10px;
+    }
+
+    #div1-1 {
+        margin-left: 0;
+    }
+
+    .buttonDiv1 {
+        margin-left: 0;
+        width: auto;
+    }
+
+    #div2 {
+        height: auto;
+        padding: 10px;
+    }
+
+    #headerQuestion {
+        font-size: 180%;
+    }
+
+    #searchBar {
+        width: 60%;
+        font-size: 14px;
+    }
+
+    #SearchButton {
+        height: auto;
+        width: auto;
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    #div3 {
+        height: auto;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 10px;
+    }
+
+    .box {
+        width: 90%;
+        height: auto;
+        margin: 5px auto;
+    }
+
+    .divIcon img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .divContent {
+        font-size: 90%;
+    }
+
+    .extraInfoDiv {
+        width: auto;
+        font-size: 90%;
+    }
+
+    #CopyrightInfo {
+        font-size: 90%;
+        margin-bottom: 10px;
+    }
+
+    #CopyrightInfo img {
+        width: 20px;
+        height: auto;
+    }
+
+    #div1, #div2, #div3, #div4 {
+        margin: 0;
+        padding: 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #div4 {
+        padding: 20px 30px;
+        gap: 20px;
+    }
 }
