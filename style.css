@@ -1,23 +1,12 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    margin: 10px;
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
+    width: auto;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
 }
-
-#mainDiv{
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 900px;
-    background-color: antiquewhite;
-
-}
-
 
 #div1{
     width: 100%;
@@ -27,14 +16,37 @@ body {
     flex-direction: row;
     align-items: center;
     background-color: black;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
 }
+
+.divIcon-1 img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    margin: auto;
+}
+
+#div1-1{
+    width: auto;
+    display: flex;
+    margin-left: 75px;
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap;
+    
+}
+
+.textHEAD{
+    color: white;
+    font-size: 100%;
+    margin-left: 7px;
+    font-family: Calibri, sans-serif;
+}
+
 
 .buttonDiv1{
     margin-left: 100px;
     display: flex;
-    width: 250px;
+    width: 300px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -54,25 +66,26 @@ body {
     border-color: rgb(199, 199, 199);
     padding: 4px;
     font-size: 80%;
-    font-family: Calibri;
     width: 120px;
+    font-family: Calibri, sans-serif;
 }
 
 #signupButton{
     margin-left: 5%;
-    background-color: blue;
+    background-color: rgb(71, 71, 194);
     color: white;
     border-style: solid;
-    border-radius: 6px;
-    padding: 4px;
+    border-color: rgb(71, 71, 194);;
+    border-radius: 5px;
+    padding: 2px;
     font-size: 100%;
-    font-family: Calibri;
-    width: 65px;
+    font-family: Calibri, sans-serif;
+    width: 75px;
 }
 
 #div2{
     width: 100%;
-    height: 30%;
+    height: 300px;
     background-color: lavender;
     display: flex;
     flex-direction: column;
@@ -89,28 +102,39 @@ body {
 }
 
 #headerQuestion{
-    
+    font-family: Calibri, sans-serif;
+    font-size: 220%;
 }
 
 #searchBar{
-    width: 45%;
+    width: 50%;
     height: 20px;
-    border-color: white;
+    border-color: black;
     border-style: solid;
+    border-right: none;
     padding: 5px;
+    font-size: 15px;
+    font-family: Calibri, sans-serif;
 }
 
-#searchButton{
-    background-color: white;
-    border-color: white;
+#SearchButton{
     border-style: solid;
+    border-color: black;
+    background-color: white;
+    border-left: none;
+    padding: 0 10px;
+    font-size: 100%;
+    width: auto;
+    font-family: Calibri, sans-serif;
     height: 34px;
+    line-height: 20px;
+    text-align: center;
 }
 
 #div3{
     width: 100%;
-    height: 70%;
-    background-color: rgb(199, 199, 199);
+    height: 650px;
+    background-color: white;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -118,8 +142,99 @@ body {
 }
 
 .box{
-    height: 95%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    height: 90%;
     width: 95%;
-    background-color: rgb(209, 78, 78);
+    background-color: white;
 }
 
+.divIcon{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divIcon img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    margin: auto;
+}
+
+.divContent{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: left;
+    font-family: Calibri, sans-serif;
+}
+
+.subHeaders{
+    font-style: bold;
+    font-family: Calibri, sans-serif;
+}
+
+#div4 {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: space-between;
+    background-color: black;
+    gap: 20px;
+    flex-shrink: 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.extraInfoDiv {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.extraInfoHeader {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-family: Calibri, sans-serif;
+}
+
+.extraInfoContent {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    line-height: 0;
+    margin-bottom: 10px;
+    font-family: Calibri, sans-serif;
+}
+
+#CopyrightInfo {
+    width: auto;
+    text-wrap: nowrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 17px;
+    margin-bottom: 30px;
+    font-family: Calibri, sans-serif;
+}
+
+#ContactUs {
+    margin-bottom: 1px;
+}
+
+#CopyrightInfo h5 {
+    margin: 5px 0;
+}
+
+#CopyrightInfo img {
+    margin-bottom: 20px;
+}
